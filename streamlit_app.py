@@ -31,3 +31,14 @@ while pemeriksaan <= total_target:
             
         print(f"Status: Normal ({tekanan} Psi)\n")
         pemeriksaan += 1
+except ValueError:
+        print("Input tidak valid! Masukkan angka saja.")
+
+# Logika Else: Berjalan jika loop selesai tanpa terkena 'break'
+else:
+    print("\n" + "="*35)
+    print("LAPORAN: GAS STABIL")
+    print("Pengukuran Sampel Dapat dilakukan .")
+    print("="*35)
+
+print("\n--- Program Selesai ---")
